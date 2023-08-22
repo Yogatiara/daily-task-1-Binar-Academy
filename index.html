@@ -1,27 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      .p {
+        background-color: blueviolet;
+      }
+
+      @media (max-width: 600px) {
         .p {
-            background-color: blueviolet;
+          background-color: yellow;
         }
-        
-        @media (max-width: 600px) {
-            .p {
-                background-color: yellow;
-            } 
+
+        .quote-icon {
+          display: none;
         }
+      }
+
+      .quote {
+        margin-top: 30px;
+      }
+
+      .p2,
+      .p3,
+      .p4,
+      .p5 {
+        position: static;
+        background-color: bisque;
+        padding: 12px;
+        margin-top: 10px;
+        border: 5px;
+        font-size: small;
+        border-top-left-radius: 20px;
+        text-align: justify;
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+      }
+
+      .flex-box {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .quote-icon {
+        width: 20px;
+        position: absolute;
+        left: 1px;
+      }
+
+      @media screen and (min-width: 600px) {
+        .flex-box {
+          flex-direction: row;
+          gap: 20px;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Hellow FSW 2</h1>
     <div class="h1 p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.</div>
-    <div class="h1 p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.</div>
-    <div class="h1 p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.</div>
-    <div class="h1 p4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.</div>
-    <div class="h1 p5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.</div>
-</body>
+
+    <div class="quote flex-box">
+      <div class="h1 p2">
+        <img class="quote-icon" src="/left-quote.png" src="/left-quote.png" alt="" />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.
+      </div>
+      <div class="h1 p3">
+        <img class="quote-icon" src="/left-quote.png" alt="" />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.
+      </div>
+      <div class="h1 p4">
+        <img class="quote-icon" src="/left-quote.png" src="/left-quote.png" alt="" />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.
+      </div>
+      <div class="h1 p5">
+        <img class="quote-icon" src="/left-quote.png" src="/left-quote.png" alt="" />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic corporis excepturi neque? Dolorum saepe cum magni possimus sed dolore asperiores quidem odio quisquam iusto nemo voluptatum, ullam hic, placeat nisi.
+      </div>
+    </div>
+  </body>
 </html>
